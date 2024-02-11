@@ -1,0 +1,55 @@
+schema-version: "1.0"
+build:
+  name: OpenSearch Dashboards
+  version: 2.11.1
+  qualifier: ee1
+ci:
+  image:
+    name: opensearchstaging/ci-runner:ci-runner-rockylinux8-opensearch-dashboards-build-v1
+components:
+  - name: OpenSearch-Dashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/OpenSearch-Dashboards.git
+    ref: 2.11.x-ee
+  - name: functionalTestDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/opensearch-dashboards-functional-test.git
+    ref: 2.11.x-ee
+  - name: observabilityDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/dashboards-observability.git
+    ref: 2.11.x-ee
+  - name: reportsDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/dashboards-reporting.git
+    ref: 2.11.x-ee
+  - name: ganttChartDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/dashboards-visualizations.git
+    working_directory: gantt-chart
+    ref: 2.11.x-ee
+  - name: queryWorkbenchDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/dashboards-query-workbench.git
+    ref: 2.11.x-ee
+  - name: customImportMapDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/dashboards-maps.git
+    ref: 2.11.x-ee
+  - name: anomalyDetectionDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/anomaly-detection-dashboards-plugin
+    ref: 2.11.x-ee
+  - name: mlCommonsDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/ml-commons-dashboards.git
+    ref: 2.11.x-ee
+  - name: indexManagementDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/index-management-dashboards-plugin.git
+    ref: 2.11.x-ee
+  - name: notificationsDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/dashboards-notifications.git
+    ref: 2.11.x-ee
+  - name: alertingDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/alerting-dashboards-plugin.git
+    ref: 2.11.x-ee
+  - name: securityAnalyticsDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/security-analytics-dashboards-plugin.git
+    ref: 2.11.x-ee
+  - name: securityDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/security-dashboards-plugin.git
+    ref: 2.11.x-ee
+  - name: searchRelevanceDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/dashboards-search-relevance.git
+    ref: 2.11.x-ee
