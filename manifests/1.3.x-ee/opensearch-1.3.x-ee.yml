@@ -1,0 +1,141 @@
+schema-version: "1.0"
+build:
+  name: OpenSearch
+  version: 1.3.14
+  qualifier: ee1
+ci:
+  image:
+    name: opensearchstaging/ci-runner:ci-runner-centos7-opensearch-build-v3
+    args: -e JAVA_HOME=/opt/java/openjdk-11
+components:
+  - name: OpenSearch
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/OpenSearch.git
+    ref: 1.3.x-ee
+    checks:
+      - gradle:publish
+      - gradle:properties:version
+  - name: common-utils
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/common-utils.git
+    ref: 1.3.x-ee
+    checks:
+      - gradle:publish
+      - gradle:properties:version
+    platforms:
+      - linux
+      - windows
+  - name: job-scheduler
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/job-scheduler.git
+    ref: 1.3.x-ee
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+    platforms:
+      - linux
+      - windows
+  - name: security
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/security.git
+    ref: 1.3.x-ee
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+    platforms:
+      - linux
+      - windows
+  - name: ml-commons
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/ml-commons.git
+    ref: 1.3.x-ee
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version: opensearch-ml-plugin
+    platforms:
+      - linux
+      - windows
+  - name: performance-analyzer
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/performance-analyzer.git
+    ref: 1.3.x-ee
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+    platforms:
+      - linux
+  - name: alerting
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/alerting.git
+    ref: 1.3.x-ee
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version: alerting
+    platforms:
+      - linux
+      - windows
+  - name: opensearch-reports
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/reporting.git
+    ref: 1.3.x-ee
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+    platforms:
+      - linux
+      - windows
+  - name: cross-cluster-replication
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/cross-cluster-replication.git
+    ref: 1.3.x-ee
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+    platforms:
+      - linux
+      - windows
+  - name: sql
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/sql.git
+    ref: 1.3.x-ee
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version: plugin
+    platforms:
+      - linux
+      - windows
+  - name: k-NN
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/k-NN.git
+    ref: 1.3.x-ee
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+    platforms:
+      - linux
+      - windows
+  - name: opensearch-observability
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/observability.git
+    ref: 1.3.x-ee
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+    platforms:
+      - linux
+      - windows
+  - name: index-management
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/index-management.git
+    ref: 1.3.x-ee
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+    platforms:
+      - linux
+      - windows
+  - name: anomaly-detection
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/anomaly-detection.git
+    ref: 1.3.x-ee
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+    platforms:
+      - linux
+      - windows
+  - name: asynchronous-search
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/asynchronous-search.git
+    ref: 1.3.x-ee
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+    platforms:
+      - linux
+      - windows

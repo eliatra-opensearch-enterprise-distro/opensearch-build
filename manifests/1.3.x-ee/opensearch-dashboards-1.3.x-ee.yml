@@ -1,0 +1,40 @@
+schema-version: "1.0"
+build:
+  name: OpenSearch Dashboards
+  version: 1.3.14
+  qualifier: ee1
+ci:
+  image:
+    name: opensearchstaging/ci-runner:ci-runner-centos7-opensearch-dashboards-build-v4
+components:
+  - name: OpenSearch-Dashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/OpenSearch-Dashboards.git
+    ref: 1.3.x-ee
+  - name: functionalTestDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/opensearch-dashboards-functional-test.git
+    ref: 1.3.x-ee
+  - name: anomalyDetectionDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/anomaly-detection-dashboards-plugin
+    ref: 1.3.x-ee
+  - name: ganttChartDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/dashboards-visualizations.git
+    ref: 1.3.x-ee
+    working_directory: gantt-chart
+  - name: observabilityDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/dashboards-observability.git
+    ref: 1.3.x-ee
+  - name: alertingDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/alerting-dashboards-plugin.git
+    ref: 1.3.x-ee
+  - name: indexManagementDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/index-management-dashboards-plugin
+    ref: 1.3.x-ee
+  - name: reportsDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/dashboards-reporting.git
+    ref: 1.3.x-ee
+  - name: securityDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/security-dashboards-plugin.git
+    ref: 1.3.x-ee
+  - name: queryWorkbenchDashboards
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/dashboards-query-workbench.git
+    ref: 1.3.x-ee
