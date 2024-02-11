@@ -29,9 +29,9 @@
 Name: opensearch-dashboards
 Version: %{_version}
 Release: 1
-License: Apache-2.0
-Summary: Open source visualization dashboards for OpenSearch 
-URL: https://opensearch.org/
+License: Commercial
+Summary: An distributed and RESTful search engine
+URL: https://eliatra.com/
 Group: Application/Internet
 ExclusiveArch: %{_architecture}
 AutoReqProv: no
