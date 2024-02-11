@@ -29,9 +29,9 @@
 Name: opensearch
 Version: %{_version}
 Release: 1
-License: Apache-2.0
-Summary: An open source distributed and RESTful search engine
-URL: https://opensearch.org/
+License: Commercial
+Summary: An distributed and RESTful search engine
+URL: https://eliatra.com/
 Group: Application/Internet
 ExclusiveArch: %{_architecture}
 #Requires: #java-11-amazon-corretto-devel
