@@ -1,8 +1,8 @@
 schema-version: "1.0"
 build:
   name: OpenSearch Dashboards
-  version: 1.3.14
-  qualifier: ee1
+  version: 1.3.x
+  qualifier: ee
 ci:
   image:
     name: opensearchstaging/ci-runner:ci-runner-centos7-opensearch-dashboards-build-v4
