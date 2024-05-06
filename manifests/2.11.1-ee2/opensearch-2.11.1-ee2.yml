@@ -24,182 +24,182 @@ components:
     checks:
       - gradle:properties:version
       - gradle:dependencies:opensearch.version
-  # - name: common-utils
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/common-utils.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   checks:
-  #     - gradle:publish
-  #     - gradle:properties:version
-  # - name: job-scheduler
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/job-scheduler.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   checks:
-  #     - gradle:properties:version
-  #     - gradle:dependencies:opensearch.version
-  # - name: security
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/security.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  # - name: k-NN
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/k-NN.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   checks:
-  #     - gradle:properties:version
-  #     - gradle:dependencies:opensearch.version
-  # - name: geospatial
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/geospatial.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   checks:
-  #     - gradle:properties:version
-  #     - gradle:dependencies:opensearch.version
-  # - name: cross-cluster-replication
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/cross-cluster-replication.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   checks:
-  #     - gradle:properties:version
-  #     - gradle:dependencies:opensearch.version
-  # - name: ml-commons
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/ml-commons.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   checks:
-  #     - gradle:properties:version
-  #     - gradle:dependencies:opensearch.version: opensearch-ml-plugin
-  # - name: neural-search
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/neural-search.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   checks:
-  #     - gradle:properties:version
-  #     - gradle:dependencies:opensearch.version
-  # - name: notifications-core
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/notifications.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   working_directory: notifications
-  #   checks:
-  #     - gradle:properties:version
-  #     - gradle:dependencies:opensearch.version: opensearch-notifications-core
-  # - name: notifications
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/notifications.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   working_directory: notifications
-  #   checks:
-  #     - gradle:properties:version
-  #     - gradle:dependencies:opensearch.version: notifications
-  # - name: opensearch-observability
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/observability.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   checks:
-  #     - gradle:properties:version
-  #     - gradle:dependencies:opensearch.version
-  # - name: opensearch-reports
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/reporting.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   checks:
-  #     - gradle:properties:version
-  #     - gradle:dependencies:opensearch.version
-  # - name: sql
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/sql.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   checks:
-  #     - gradle:properties:version
-  #     - gradle:dependencies:opensearch.version: opensearch-sql-plugin
-  # - name: asynchronous-search
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/asynchronous-search.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   checks:
-  #     - gradle:properties:version
-  #     - gradle:dependencies:opensearch.version
-  # - name: anomaly-detection
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/anomaly-detection.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   checks:
-  #     - gradle:properties:version
-  #     - gradle:dependencies:opensearch.version
-  # - name: alerting
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/alerting.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   checks:
-  #     - gradle:properties:version
-  #     - gradle:dependencies:opensearch.version: alerting
-  # - name: security-analytics
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/security-analytics.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   checks:
-  #     - gradle:properties:version
-  # - name: index-management
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/index-management.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   checks:
-  #     - gradle:properties:version
-  # - name: performance-analyzer
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/performance-analyzer.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #   checks:
-  #     - gradle:properties:version
-  #     - gradle:dependencies:opensearch.version
-  # - name: custom-codecs
-  #   repository: https://github.com/eliatra-opensearch-enterprise-distro/custom-codecs.git
-  #   ref: 2.11.x-ee
-  #   platforms:
-  #     - linux
-  #     - windows
-  #   checks:
-  #     - gradle:properties:version
-  #     - gradle:dependencies:opensearch.version
+  - name: common-utils
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/common-utils.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:publish
+      - gradle:properties:version
+  - name: job-scheduler
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/job-scheduler.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+  - name: security
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/security.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+  - name: k-NN
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/k-NN.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+  - name: geospatial
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/geospatial.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+  - name: cross-cluster-replication
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/cross-cluster-replication.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+  - name: ml-commons
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/ml-commons.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version: opensearch-ml-plugin
+  - name: neural-search
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/neural-search.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+  - name: notifications-core
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/notifications.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    working_directory: notifications
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version: opensearch-notifications-core
+  - name: notifications
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/notifications.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    working_directory: notifications
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version: notifications
+  - name: opensearch-observability
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/observability.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+  - name: opensearch-reports
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/reporting.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+  - name: sql
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/sql.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version: opensearch-sql-plugin
+  - name: asynchronous-search
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/asynchronous-search.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+  - name: anomaly-detection
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/anomaly-detection.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+  - name: alerting
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/alerting.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version: alerting
+  - name: security-analytics
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/security-analytics.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:properties:version
+  - name: index-management
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/index-management.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:properties:version
+  - name: performance-analyzer
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/performance-analyzer.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
+  - name: custom-codecs
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/custom-codecs.git
+    ref: 2.11.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
 
 
 
