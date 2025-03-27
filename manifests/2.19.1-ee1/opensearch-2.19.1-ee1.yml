@@ -11,6 +11,16 @@ components:
   - name: OpenSearch
     repository: https://github.com/eliatra-opensearch-enterprise-distro/OpenSearch.git
     ref: 2.19.x-ee
+  # eliatra plugins
+  - name: cloud-lock
+    repository: https://github.com/eliatra-opensearch-enterprise-distro/cloud-lock.git
+    ref: 2.19.x-ee
+    platforms:
+      - linux
+      - windows
+    checks:
+      - gradle:properties:version
+      - gradle:dependencies:opensearch.version
   - name: common-utils
     repository: https://github.com/eliatra-opensearch-enterprise-distro/common-utils.git
     ref: 2.19.x-ee
